@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cutmix-cifar100-repro"
+version = "0.1.0"
+description = "Single-GPU, memory-bounded reproduction of CutMix on CIFAR-100"
+requires-python = ">=3.10"
+dependencies = [
+  "torch==2.12.1",
+  "torchvision==0.27.1",
+  "numpy==2.5.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]
+

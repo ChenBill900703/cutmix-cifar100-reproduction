@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "best": {
+    "top1_error": 15.13,
+    "top5_error": 3.47,
+    "epoch": 268
+  },
+  "last": {
+    "epoch": 300,
+    "lr": 0.0025000000000000005,
+    "train_loss": 0.4733330366897583,
+    "validation_loss": 0.6187209714889527,
+    "top1_error": 15.57,
+    "top5_error": 3.48,
+    "epoch_seconds": 154.14848360000178,
+    "peak_allocated_bytes": 5283063296,
+    "peak_reserved_bytes": 5695864832
+  },
+  "config": {
+    "experiment": {
+      "name": "pyramidnet200_cutmix",
+      "seed": 1
+    },
+    "data": {
+      "dataset": "cifar100",
+      "root": "data",
+      "workers": 4
+    },
+    "model": {
+      "name": "pyramidnet",
+      "depth": 200,
+      "alpha": 240,
+      "bottleneck": true
+    },
+    "training": {
+      "epochs": 300,
+      "effective_batch_size": 64,
+      "micro_batch_size": "auto",
+      "validation_batch_size": "auto",
+      "learning_rate": 0.25,
+      "lr_milestones": [
+        150,
+        225
+      ],
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "nesterov": true,
+      "cudnn_benchmark": true
+    },
+    "cutmix": {
+      "enabled": true,
+      "beta": 1.0,
+      "probability": 0.5
+    },
+    "memory": {
+      "maximum_gib": 7.2,
+      "maximum_fraction": 0.9,
+      "device": "cuda:0",
+      "amp": true
+    }
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "E:\\Random Erasing Data Augmentation\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "torch": "2.12.1+cu126",
+    "torchvision": "0.27.1+cu126",
+    "numpy": "2.5.2",
+    "cuda_available": true,
+    "cuda_runtime": "12.6",
+    "cudnn": 91002,
+    "driver": "591.86",
+    "gpu": "NVIDIA GeForce RTX 3070 Ti",
+    "gpu_count": 1,
+    "gpu_total_bytes": 8589410304
+  },
+  "parameter_count": 26844952,
+  "device": "cuda:0",
+  "memory_limit": {
+    "total_bytes": 8589410304,
+    "limit_bytes": 7730469273,
+    "fraction": 0.8999999999301466
+  },
+  "micro_batch_size": 64,
+  "effective_batch_size": 64,
+  "accumulation_steps": 1,
+  "validation_batch_size": 64,
+  "resumed_from": null
+}

@@ -1,0 +1,39 @@
+[experiment]
+name = "pyramidnet200_cutmix_smoke"
+seed = 0
+
+[data]
+dataset = "cifar100"
+root = "data"
+workers = 0
+
+[model]
+name = "pyramidnet"
+depth = 200
+alpha = 240
+bottleneck = true
+
+[training]
+epochs = 2
+effective_batch_size = 64
+micro_batch_size = "auto"
+validation_batch_size = "auto"
+# The tiny diagnostic subset is intentionally run at a stable smoke-test LR;
+# formal baseline/CutMix configs remain at the paper's 0.25.
+learning_rate = 0.01
+lr_milestones = [150, 225]
+momentum = 0.9
+weight_decay = 0.0001
+nesterov = true
+cudnn_benchmark = true
+
+[cutmix]
+enabled = true
+beta = 1.0
+probability = 0.5
+
+[memory]
+maximum_gib = 7.2
+maximum_fraction = 0.90
+device = "cuda:0"
+amp = true

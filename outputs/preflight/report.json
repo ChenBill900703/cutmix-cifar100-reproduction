@@ -1,0 +1,100 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "E:\\Random Erasing Data Augmentation\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "torch": "2.12.1+cu126",
+    "torchvision": "0.27.1+cu126",
+    "numpy": "2.5.2",
+    "cuda_available": true,
+    "cuda_runtime": "12.6",
+    "cudnn": 91002,
+    "driver": "591.86",
+    "gpu": "NVIDIA GeForce RTX 3070 Ti",
+    "gpu_count": 1,
+    "gpu_total_bytes": 8589410304
+  },
+  "memory_limit": {
+    "total_bytes": 8589410304,
+    "limit_bytes": 7730469273,
+    "fraction": 0.8999999999301466
+  },
+  "model": {
+    "name": "PyramidNet-200",
+    "alpha": 240,
+    "bottleneck": true,
+    "parameter_count": 26844952
+  },
+  "training_trials": [
+    {
+      "batch_size": 64,
+      "status": "safe",
+      "steps": 5,
+      "peak_allocated_bytes": 5289892352,
+      "peak_reserved_bytes": 5700059136,
+      "seconds": 3.6989373000105843
+    },
+    {
+      "batch_size": 32,
+      "status": "safe",
+      "steps": 5,
+      "peak_allocated_bytes": 2804326400,
+      "peak_reserved_bytes": 2969567232,
+      "seconds": 2.612372500007041
+    },
+    {
+      "batch_size": 16,
+      "status": "safe",
+      "steps": 5,
+      "peak_allocated_bytes": 1554385920,
+      "peak_reserved_bytes": 1610612736,
+      "seconds": 2.063948000082746
+    },
+    {
+      "batch_size": 8,
+      "status": "safe",
+      "steps": 5,
+      "peak_allocated_bytes": 925469696,
+      "peak_reserved_bytes": 1012924416,
+      "seconds": 3.4468321000458673
+    }
+  ],
+  "validation_trials": [
+    {
+      "batch_size": 64,
+      "status": "safe",
+      "steps": 5,
+      "peak_allocated_bytes": 329489920,
+      "peak_reserved_bytes": 1988100096,
+      "seconds": 0.6721402000403032
+    },
+    {
+      "batch_size": 32,
+      "status": "safe",
+      "steps": 5,
+      "peak_allocated_bytes": 229481984,
+      "peak_reserved_bytes": 480247808,
+      "seconds": 0.52436789998319
+    },
+    {
+      "batch_size": 16,
+      "status": "safe",
+      "steps": 5,
+      "peak_allocated_bytes": 177905152,
+      "peak_reserved_bytes": 216006656,
+      "seconds": 0.5066475999774411
+    },
+    {
+      "batch_size": 8,
+      "status": "safe",
+      "steps": 5,
+      "peak_allocated_bytes": 152641024,
+      "peak_reserved_bytes": 184549376,
+      "seconds": 0.5118060000240803
+    }
+  ],
+  "recommended_micro_batch": 64,
+  "recommended_validation_batch": 64,
+  "fallback_required": false,
+  "note": "If fallback_required is true, inspect other GPU processes before using PyramidNet-110 alpha=64."
+}

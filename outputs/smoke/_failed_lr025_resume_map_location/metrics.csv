@@ -1,0 +1,2 @@
+epoch,lr,train_loss,validation_loss,top1_error,top5_error,epoch_seconds,peak_allocated_bytes,peak_reserved_bytes
+1,0.25,5.45188894867897,nan,99.609375,95.3125,55.773123499937356,5290669056,5706350592

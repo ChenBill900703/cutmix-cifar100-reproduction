@@ -1,0 +1,7 @@
+run,method,seed,status,best_top1_error,paper_top1_error,gap_to_paper_pp,best_top5_error,paper_top5_error,top5_gap_to_paper_pp,best_epoch,last_top1_error,last_top5_error,training_hours,peak_reserved_gib,micro_batch,accumulation_steps
+pyramidnet200_baseline_seed0,baseline,0,complete,16.73,16.45,0.28,3.5,3.69,-0.19,295,16.91,3.6,13.063,5.334,64,1
+pyramidnet200_baseline_seed1,baseline,1,complete,16.83,16.45,0.38,3.7,3.69,0.01,282,17.05,3.59,12.797,5.314,64,1
+pyramidnet200_baseline_seed2,baseline,2,complete,16.66,16.45,0.21,3.66,3.69,-0.03,298,16.96,3.65,12.942,5.33,64,1
+pyramidnet200_cutmix_seed0,cutmix,0,complete,14.72,14.47,0.25,3.02,2.97,0.05,244,15.49,3.39,13.074,5.334,64,1
+pyramidnet200_cutmix_seed1,cutmix,1,complete,15.13,14.47,0.66,3.47,2.97,0.5,268,15.57,3.48,12.934,5.305,64,1
+pyramidnet200_cutmix_seed2,cutmix,2,complete,14.8,14.47,0.33,3.11,2.97,0.14,239,15.82,3.38,13.098,5.33,64,1
